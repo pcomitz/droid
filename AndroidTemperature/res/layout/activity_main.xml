@@ -1,0 +1,35 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:stretchColumns="1"
+    >
+
+    <TableRow>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/prompt" />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/initial_temp"
+        android:inputType="text"
+        />
+    </TableRow>
+    
+    <TableLayout >
+    <Button 
+        android:id="@+id/submitButton"
+        android:text="@string/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    </TableLayout>
+
+</TableLayout>
